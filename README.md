@@ -1,6 +1,22 @@
 # TrackingWithCF
 Re-implementation of 3 of the core algorithms for object tracking, namely Minimum Output Sum of Squared Error (MOSSE), Kernelized Correlation Filters (KCF) and Dual Correlation Filters using raw features (grayscale or RGB) and HOG features on the task of tracking from the point of view of a UAV using the UAV123 dataset.
 
+While the KCF and DCF have proven much more performant than the MOSSE algorithm with MIOU scores nearly 50% higher, the use of HOG features seemed to be detrimental in the case of the KCF which goes against what was demonstrated in the paper from Henriques et al. (2015. These 3 algorithms form the basis of their more advanced counterparts and suffer from drawbacks from variations in the frames of the videos used. The most prominent difficulty is that of tracking in the context of Full Occlusion. The task was all the more difficult since we used a 10fps version of the dataset making variations between frames all the more important.
+
+
+
+# Results
+
+To note that the implmentation was done in python and hence does not benefit from the same advantages as C (notably speed), some improvement scan be made using numba and cython, however, the purpose of this repository is one of demonstration.
+
+![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/images/OPE.png)
+
+![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/images/multOPE.png)
+
+![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/images/trackspeed.png)
+
+
+
 Implementation from the following papers:
 
 `
