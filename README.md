@@ -9,11 +9,11 @@ While the KCF and DCF have proven much more performant than the MOSSE algorithm 
 
 To note that the implmentation was done in python and hence does not benefit from the same advantages as C (notably speed), some improvement scan be made using numba and cython, however, the purpose of this repository is one of demonstration.
 
-![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/tree/main/images/OPE.png)
+![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/blob/main/images/OPE.png)
 
-![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/tree/main/images/multOPE.png)
+![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/blob/main/images/multOPE.png)
 
-![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/tree/main/images/trackspeed.png)
+![alt text](https://github.com/shawn-lab-ml/TrackingWithCF/blob/main/images/trackspeed.png)
 
 
 
